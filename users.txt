@@ -4,3 +4,5 @@ Alan,Turing,aturing@w3c.com,58,aturingb6a85bd8
 Ted,Nelson,ted.n@w3c.com,43,tnelsonb36f80b5
 Alan,Turing,aturing@w3c.com,58,aturing3313a2bb
 Ted,Nelson,ted.n@w3c.com,43,tnelsond5f47aea
+Alan,Turing,aturing@w3c.com,58,aturing1f33b91e
+Ted,Nelson,ted.n@w3c.com,43,tnelsonfcdd1de0
