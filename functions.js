@@ -1,8 +1,10 @@
 const { v4: uuidv4 } = require('uuid');
+const fs = require('fs');
 var validator = require('validator');
 
 
 function generateUniqueID(fname, lname){
+    
     uid = uuidv4().substring(0,8)
     accId = String(fname.toLowerCase().charAt(0)) + String(lname.toLowerCase()) + String(uid)
     return accId
@@ -47,9 +49,35 @@ function addAccount (arr){
         flags += 1
     }
 
-    return flags
+    
+    if (flags == 6){
+        uid = generateUniqueID(arr[0],arr[1]);
+        arr.push(uid);
+        var content = "";
+
+        for (let i = 0; i < arr.length; i++) {
+            if (i < arr.length-1){
+                content += arr[i]+','
+            }else{
+                content += arr[i]
+            }   
+        }
+
+        content += "\n";
+        
+        fs.appendFile('users.txt', content, err => {
+            if (err){
+                console.err;
+                return;
+            }   
+        })
+        return true
+    }else{
+        return false
+    }
 }
 
-console.log(addAccount(["Alan", "Turing", "aturing@w3c.com", 58]))
 
-console.log(generateUniqueID("Alan","Turing"));
+
+module.exports.generateUniqueID = generateUniqueID;
+module.exports.addAccount = addAccount;
