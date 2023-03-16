@@ -1,0 +1,24 @@
+{
+  "name": "exercise-03-importing-exporting-and-npm-banglost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CMSC-100-UV7L/exercise-03-importing-exporting-and-npm-BanglosT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CMSC-100-UV7L/exercise-03-importing-exporting-and-npm-BanglosT/issues"
+  },
+  "homepage": "https://github.com/CMSC-100-UV7L/exercise-03-importing-exporting-and-npm-BanglosT#readme",
+  "dependencies": {
+    "uuid": "^9.0.0",
+    "validator": "^13.9.0"
+  }
+}
