@@ -34,8 +34,8 @@ save the data into a new line of file called users.txt in the following format:
 first name,last name,email,age,uniqueID
 
 e.g.
-users.txt
-Tim,Berners-Lee,tim@w3c.com,25,aturing5133f34e
+</br>
+Tim,Berners-Lee,tim@w3c.com,25,aturing5133f34e</br>
 Ted,Nelson,ted.n@w3c.com,43,tnelson0cfa6312
 
 
